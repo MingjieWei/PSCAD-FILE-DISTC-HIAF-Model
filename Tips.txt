@@ -1,0 +1,11 @@
+### By Mingjie Wei, School of Electrical Engineering, Shandong University, China
+### 2020/07/09
+
+The model has been pulished in the paper:
+M.Wei, W. Liu, F. Shi, Z. Jin, H. Zhang and W. Chen, "Distortion-Controllable Arc Modelling for High Impedance Arc Fault at the Distribution Network," IEEE Transactions on Power Delivery, doi: 10.1109/TPWRD.2020.2981376.
+
+Compared to the introductions in the paper, there are two minor modifications:
+
+1. The OFS in the first equation of Eq.(10) should be |OFS|.
+2. Eq.(8) is just the concise expression. If directly using it in PSCAD, the Pres during t¡Ê[td-DUR/2, td] is not correct because the td during this interval has not been updated.
+To realize it in PSCAD, the two intervals in Eq.(8) should be split into three intervals, just like the uploaded PSCAD file.
